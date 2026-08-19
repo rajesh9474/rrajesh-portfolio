@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ArrowRight, Download, Bot, Sparkles, FileText, CheckCircle2 } from 'lucide-react';
-import ThreeDOrb from './ThreeDOrb';
 import profilePic from '../assets/profile.jpg';
 
 export default function Hero({ onOpenResumeModal }) {
