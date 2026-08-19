@@ -127,24 +127,45 @@ export default function Hero({ onOpenResumeModal }) {
 
           </div>
 
-          {/* Right Column: 3D Scene */}
+          {/* Right Column: Hero Profile Photo Showcase */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
             
-            {/* Subtle glow border wrapper */}
-            <div className="w-full max-w-sm sm:max-w-none relative rounded-3xl glass-panel p-2 border border-slate-800/80 shadow-2xl">
+            <div className="relative group w-full max-w-sm sm:max-w-md">
+              {/* Animated Glowing Outer Aura */}
+              <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-cyan-500 via-purple-600 to-emerald-400 opacity-75 blur-xl group-hover:opacity-100 transition duration-700 animate-pulse-slow" />
               
-              {/* Floating Header Tag */}
-              <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-lg bg-slate-950/80 border border-cyan-500/40 text-[11px] font-mono text-cyan-300 flex items-center space-x-2 backdrop-blur-md">
-                <Bot className="w-3.5 h-3.5 text-cyan-400 animate-spin-slow" />
-                <span>AI Core Neural Mesh</span>
-              </div>
+              {/* Glass Card Container */}
+              <div className="relative rounded-3xl glass-panel p-3 border border-cyan-500/40 shadow-2xl overflow-hidden">
+                
+                {/* Floating Top Badge */}
+                <div className="absolute top-6 left-6 z-20 px-3.5 py-1.5 rounded-full bg-slate-950/85 border border-cyan-500/50 text-[11px] font-mono text-cyan-300 flex items-center space-x-2 backdrop-blur-md shadow-lg">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+                  <span>R. Rajesh • Final Year B.E.</span>
+                </div>
 
-              {/* Three.js Interactive Sphere Container */}
-              <ThreeDOrb />
+                {/* Profile Image Frame */}
+                <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden bg-slate-950 relative border border-slate-800">
+                  <img 
+                    src={profilePic} 
+                    alt="R Rajesh - B.E. Artificial Intelligence & Machine Learning Student" 
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                  
+                  {/* Subtle Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
 
-              {/* Interactive hint */}
-              <div className="absolute bottom-4 right-4 z-20 text-[10px] font-mono text-slate-400 bg-slate-950/80 px-2.5 py-1 rounded-md border border-slate-800 backdrop-blur-md">
-                Drag / Move mouse to rotate
+                  {/* Bottom Info Overlay */}
+                  <div className="absolute bottom-4 inset-x-4 z-20 glass-panel p-3.5 rounded-xl border border-cyan-500/30 backdrop-blur-md flex items-center justify-between">
+                    <div>
+                      <h3 className="font-outfit font-bold text-white text-base">R. RAJESH</h3>
+                      <p className="text-[11px] font-mono text-cyan-300">B.E. AI & ML Engineer</p>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 text-[10px] font-mono border border-cyan-400/30">
+                      Tamil Nadu, IN
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
