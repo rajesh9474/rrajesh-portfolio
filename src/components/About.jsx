@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, MapPin, Globe2, Calendar, Brain, Code2, Users, Lightbulb, Compass, Zap } from 'lucide-react';
+import profilePic from '../assets/profile.jpg';
 
 const softSkills = [
   { name: 'Teamwork', icon: Users, desc: 'Collaborating efficiently in hackathons & team projects' },
@@ -49,13 +50,13 @@ export default function About() {
                   {/* Photo Frame */}
                   <div className="relative w-36 h-44 sm:w-40 sm:h-48 rounded-2xl overflow-hidden border border-cyan-500/40 bg-slate-900 shadow-2xl">
                     <img 
-                      src="/profile.jpg" 
+                      src={profilePic} 
                       alt="R Rajesh - B.E. AI & ML Student" 
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-2 text-center">
                       <span className="text-[11px] font-mono text-cyan-300 font-bold block">R. RAJESH</span>
-                      <span className="text-[9px] font-mono text-purple-300 block">AI & ML Engineer</span>
+                      <span className="text-[9px] font-mono text-purple-300 block">Final Year Student</span>
                     </div>
                   </div>
                 </div>
@@ -68,7 +69,7 @@ export default function About() {
                   </h3>
 
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    I am a dedicated <strong className="text-white">B.E. Artificial Intelligence & Machine Learning</strong> student (4th Year) from <strong>Tamil Nadu, India</strong>. My passion lies in software development, intelligent applications, and building modern web solutions that solve real-world problems.
+                    I am a dedicated <strong className="text-white">B.E. Artificial Intelligence & Machine Learning</strong> student (<strong className="text-cyan-400 font-semibold">Final Year</strong>) from <strong>Tamil Nadu, India</strong>. My passion lies in software development, intelligent applications, and building modern web solutions that solve real-world problems.
                   </p>
 
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed">

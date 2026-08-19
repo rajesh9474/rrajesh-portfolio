@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ArrowRight, Download, Bot, Sparkles, FileText, CheckCircle2 } from 'lucide-react';
 import ThreeDOrb from './ThreeDOrb';
+import profilePic from '../assets/profile.jpg';
 
 export default function Hero({ onOpenResumeModal }) {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -29,7 +30,7 @@ export default function Hero({ onOpenResumeModal }) {
               <div className="relative group flex-shrink-0">
                 <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 opacity-80 blur-sm group-hover:opacity-100 transition" />
                 <img 
-                  src="/profile.jpg" 
+                  src={profilePic} 
                   alt="R Rajesh" 
                   className="relative w-12 h-12 rounded-full object-cover object-top border-2 border-cyan-400/80 shadow-glow-cyan"
                 />
@@ -48,13 +49,13 @@ export default function Hero({ onOpenResumeModal }) {
 
             {/* Subheadline */}
             <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Hi, I'm <strong className="text-white font-semibold">Rajesh</strong> — an AI & Machine Learning student passionate about software development, web technologies, and building innovative AI-powered applications.
+              Hi, I'm <strong className="text-white font-semibold">Rajesh</strong> — a Final Year AI & Machine Learning student passionate about software development, web technologies, and building innovative AI-powered applications.
             </p>
 
             {/* Key Quick Tags */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 pt-1">
               <span className="px-3 py-1 rounded-md bg-slate-800/80 text-xs font-mono text-cyan-300 border border-slate-700/60">
-                B.E. AI & ML (2023–2027)
+                Final Year B.E. AI & ML
               </span>
               <span className="px-3 py-1 rounded-md bg-slate-800/80 text-xs font-mono text-purple-300 border border-slate-700/60">
                 CGPA: 8.01

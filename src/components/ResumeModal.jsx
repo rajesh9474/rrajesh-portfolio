@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Printer, Download, Mail, Linkedin, Github, MapPin, GraduationCap, Award, Code2, Users } from 'lucide-react';
+import profilePic from '../assets/profile.jpg';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -54,7 +55,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="border-b border-slate-800 pb-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
             <div className="relative w-20 h-24 rounded-xl overflow-hidden border border-cyan-500/40 bg-slate-950 flex-shrink-0 shadow-lg">
               <img 
-                src="/profile.jpg" 
+                src={profilePic} 
                 alt="R Rajesh" 
                 className="w-full h-full object-cover object-top"
               />
@@ -62,7 +63,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div className="space-y-2 flex-1">
               <h1 className="font-outfit text-3xl font-extrabold text-white">R RAJESH</h1>
               <p className="text-cyan-400 font-mono text-sm font-semibold">
-                B.E. Artificial Intelligence & Machine Learning Student (4th Year)
+                Final Year B.E. Artificial Intelligence & Machine Learning Student
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-300">
                 <span className="flex items-center space-x-1.5">
