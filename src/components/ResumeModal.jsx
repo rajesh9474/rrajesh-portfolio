@@ -51,28 +51,37 @@ export default function ResumeModal({ isOpen, onClose }) {
         <div className="space-y-8 text-slate-200">
           
           {/* Header Bio */}
-          <div className="border-b border-slate-800 pb-6 space-y-3">
-            <h1 className="font-outfit text-3xl font-extrabold text-white">R RAJESH</h1>
-            <p className="text-cyan-400 font-mono text-sm font-semibold">
-              B.E. Artificial Intelligence & Machine Learning Student
-            </p>
-            <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-300">
-              <span className="flex items-center space-x-1.5">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Andaman and Nicobar Islands, India</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <Mail className="w-3.5 h-3.5 text-cyan-400" />
-                <span>rrajeshsk555@gmail.com</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <Linkedin className="w-3.5 h-3.5 text-purple-400" />
-                <span>linkedin.com/in/r-rajesh-05997633a/</span>
-              </span>
-              <span className="flex items-center space-x-1.5">
-                <Github className="w-3.5 h-3.5 text-emerald-400" />
-                <span>github.com/rajesh9474/</span>
-              </span>
+          <div className="border-b border-slate-800 pb-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            <div className="relative w-20 h-24 rounded-xl overflow-hidden border border-cyan-500/40 bg-slate-950 flex-shrink-0 shadow-lg">
+              <img 
+                src="/profile.jpg" 
+                alt="R Rajesh" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="space-y-2 flex-1">
+              <h1 className="font-outfit text-3xl font-extrabold text-white">R RAJESH</h1>
+              <p className="text-cyan-400 font-mono text-sm font-semibold">
+                B.E. Artificial Intelligence & Machine Learning Student (4th Year)
+              </p>
+              <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-300">
+                <span className="flex items-center space-x-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Tamil Nadu, India</span>
+                </span>
+                <span className="flex items-center space-x-1.5">
+                  <Mail className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>rrajeshsk555@gmail.com</span>
+                </span>
+                <span className="flex items-center space-x-1.5">
+                  <Linkedin className="w-3.5 h-3.5 text-purple-400" />
+                  <span>linkedin.com/in/r-rajesh-05997633a/</span>
+                </span>
+                <span className="flex items-center space-x-1.5">
+                  <Github className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>github.com/rajesh9474/</span>
+                </span>
+              </div>
             </div>
           </div>
 

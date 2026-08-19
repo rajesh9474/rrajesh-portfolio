@@ -38,25 +38,50 @@ export default function About() {
           <div className="lg:col-span-7 space-y-5 sm:space-y-6">
             
             {/* Bio Card */}
-            <div className="glass-panel p-5 sm:p-8 rounded-2xl space-y-4 border border-slate-800/80">
-              <h3 className="font-outfit text-lg sm:text-xl font-bold text-white flex items-center space-x-2">
-                <Code2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                <span>Biography</span>
-              </h3>
+            <div className="glass-panel p-5 sm:p-8 rounded-2xl space-y-6 border border-slate-800/80">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                
+                {/* Profile Photo Container */}
+                <div className="relative group flex-shrink-0">
+                  {/* Neon Glow Aura */}
+                  <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 via-purple-600 to-cyan-400 opacity-75 blur-md group-hover:opacity-100 transition duration-500" />
+                  
+                  {/* Photo Frame */}
+                  <div className="relative w-36 h-44 sm:w-40 sm:h-48 rounded-2xl overflow-hidden border border-cyan-500/40 bg-slate-900 shadow-2xl">
+                    <img 
+                      src="/profile.jpg" 
+                      alt="R Rajesh - B.E. AI & ML Student" 
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-2 text-center">
+                      <span className="text-[11px] font-mono text-cyan-300 font-bold block">R. RAJESH</span>
+                      <span className="text-[9px] font-mono text-purple-300 block">AI & ML Engineer</span>
+                    </div>
+                  </div>
+                </div>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                I am a dedicated <strong className="text-white">B.E. Artificial Intelligence & Machine Learning</strong> student from <strong>Andaman and Nicobar Islands, India</strong>. My passion lies in software development, intelligent applications, and building modern web solutions that solve real-world problems.
-              </p>
+                {/* Text Content */}
+                <div className="space-y-4 text-center sm:text-left flex-1">
+                  <h3 className="font-outfit text-lg sm:text-xl font-bold text-white flex items-center justify-center sm:justify-start space-x-2">
+                    <Code2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                    <span>Biography</span>
+                  </h3>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Over the course of my engineering journey, I have actively expanded my skills across <strong>Python, React, web frameworks, and AI-assisted workflows</strong>. As a strong team player and methodical problem solver, I thrive in collaborative environments such as hackathons and industrial training masterclasses.
-              </p>
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    I am a dedicated <strong className="text-white">B.E. Artificial Intelligence & Machine Learning</strong> student (4th Year) from <strong>Tamil Nadu, India</strong>. My passion lies in software development, intelligent applications, and building modern web solutions that solve real-world problems.
+                  </p>
+
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Over the course of my engineering journey, I have actively expanded my skills across <strong>Python, React, web frameworks, and AI-assisted workflows</strong>. As a strong team player and methodical problem solver, I thrive in collaborative environments such as hackathons and industrial training masterclasses.
+                  </p>
+                </div>
+              </div>
 
               {/* Location & Languages */}
               <div className="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row gap-3 sm:gap-6 text-xs font-mono text-slate-300">
                 <div className="flex items-center space-x-2.5">
                   <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>Andaman and Nicobar Islands, India</span>
+                  <span>Tamil Nadu, India</span>
                 </div>
                 <div className="flex items-center space-x-2.5">
                   <Globe2 className="w-4 h-4 text-purple-400 flex-shrink-0" />
@@ -140,21 +165,21 @@ export default function About() {
               <div className="space-y-3 pt-2">
                 <div className="flex justify-between text-xs font-mono">
                   <span className="text-slate-400">Progress (2023–2027)</span>
-                  <span className="text-cyan-400 font-semibold">Year 2 / 4</span>
+                  <span className="text-cyan-400 font-semibold">Year 4 / 4</span>
                 </div>
 
                 <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden p-0.5 border border-slate-700">
                   <div 
                     className="bg-gradient-to-r from-cyan-400 to-purple-600 h-full rounded-full transition-all duration-1000 shadow-glow-cyan"
-                    style={{ width: '50%' }}
+                    style={{ width: '95%' }}
                   />
                 </div>
 
                 <div className="grid grid-cols-4 text-[10px] font-mono text-slate-400 text-center pt-1">
                   <span className="text-cyan-400 font-bold">2023</span>
-                  <span className="text-cyan-300 font-bold">2024</span>
-                  <span>2025</span>
-                  <span>2027</span>
+                  <span className="text-cyan-400 font-bold">2024</span>
+                  <span className="text-cyan-400 font-bold">2025</span>
+                  <span className="text-cyan-300 font-bold">2027</span>
                 </div>
               </div>
 

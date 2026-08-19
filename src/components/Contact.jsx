@@ -146,7 +146,7 @@ export default function Contact() {
               {/* Location Tag */}
               <div className="pt-2 flex items-center space-x-2 text-xs font-mono text-slate-400">
                 <MapPin className="w-4 h-4 text-cyan-400" />
-                <span>Andaman and Nicobar Islands, India</span>
+                <span>Tamil Nadu, India</span>
               </div>
             </div>
 

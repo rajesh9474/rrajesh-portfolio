@@ -24,10 +24,21 @@ export default function Hero({ onOpenResumeModal }) {
           {/* Left Column: Text Content */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Status Badge */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-400 text-xs font-mono tracking-wide shadow-glow-cyan">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-              <span>Available for AI & Web Dev Projects</span>
+            {/* Status Badge & Profile Avatar */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+              <div className="relative group flex-shrink-0">
+                <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 opacity-80 blur-sm group-hover:opacity-100 transition" />
+                <img 
+                  src="/profile.jpg" 
+                  alt="R Rajesh" 
+                  className="relative w-12 h-12 rounded-full object-cover object-top border-2 border-cyan-400/80 shadow-glow-cyan"
+                />
+              </div>
+              
+              <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-400 text-xs font-mono tracking-wide shadow-glow-cyan">
+                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+                <span>Available for AI & Web Dev Projects</span>
+              </div>
             </div>
 
             {/* Main Headline */}

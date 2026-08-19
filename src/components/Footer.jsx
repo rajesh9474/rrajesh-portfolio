@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div>
               <span className="font-outfit font-bold text-white text-sm block">R. RAJESH</span>
-              <span className="text-[10px] text-slate-400">B.E. AI & ML Student • Andaman & Nicobar Islands, India</span>
+              <span className="text-[10px] text-slate-400">B.E. AI & ML Student • Tamil Nadu, India</span>
             </div>
           </div>
 
