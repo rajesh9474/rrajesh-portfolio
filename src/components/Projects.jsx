@@ -65,8 +65,8 @@ const PROJECTS = {
       'Offline-Ready Mobile Experience',
     ],
     tech: ['Android', 'Kotlin', 'AI Integration', 'Google Maps API', 'Material Design'],
-    liveUrl: 'https://github.com/rajesh9474/RAJU/releases',
-    githubUrl: 'https://github.com/rajesh9474/RAJU',
+    liveUrl: 'https://github.com/rajesh9474/MARCO/releases',
+    githubUrl: 'https://github.com/rajesh9474/MARCO',
     liveLabel: 'Download APK',
     modalDetail:
       'Marco is an AI-powered Android travel and navigation application. It uses conversational AI to answer destination queries, suggest optimal routes, and provide smart travel tips. The APK is available for direct download from GitHub Releases.',
@@ -252,9 +252,9 @@ function ProjectPreview({ project, c }) {
           </div>
         </div>
         <div className="pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-400 flex justify-between relative z-10">
-          <span>Status: Active</span>
+          <span>Status: APK Available</span>
           <span className="text-emerald-400 flex items-center space-x-1">
-            <span>Open App</span><ExternalLink className="w-2.5 h-2.5" />
+            <span>Download APK</span><Download className="w-2.5 h-2.5" />
           </span>
         </div>
       </a>
@@ -284,7 +284,10 @@ function ProjectPreview({ project, c }) {
           </div>
         </div>
         <div className="pt-2 border-t border-slate-800 text-[10px] font-mono text-slate-400 flex justify-between">
-          <span>News Aggregation App</span><span className="text-amber-300">Open Platform</span>
+          <span>Status: APK Available</span>
+          <span className="text-amber-300 flex items-center space-x-1">
+            <span>Download APK</span><Download className="w-2.5 h-2.5" />
+          </span>
         </div>
       </a>
     );

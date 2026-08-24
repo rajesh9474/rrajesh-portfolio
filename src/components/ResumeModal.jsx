@@ -151,18 +151,34 @@ export default function ResumeModal({ isOpen, onClose }) {
               </div>
               <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
                 <div className="flex flex-wrap justify-between items-center">
-                  <h3 className="font-bold text-white text-base">Inter-College Hackathon Website</h3>
+                  <h3 className="font-bold text-white text-base">Marco — AI-Powered Travel & Navigation Android App</h3>
                   <a
-                    href="https://ignite2k26.vercel.app/"
+                    href="https://github.com/rajesh9474/MARCO"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-mono text-purple-400 hover:underline"
+                    className="text-xs font-mono text-emerald-400 hover:underline"
                   >
-                    https://ignite2k26.vercel.app/
+                    GitHub & APK Release
                   </a>
                 </div>
                 <p className="text-xs text-slate-300">
-                  Developed the frontend for an inter-college hackathon event website as part of a team. Features: Responsive UI components, Event pages, Registration interface, and smooth UX.
+                  Built an intelligent Android application with Kotlin and conversational AI for route planning, destination discovery, and location-aware recommendations. APK published on GitHub Releases.
+                </p>
+              </div>
+              <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
+                <div className="flex flex-wrap justify-between items-center">
+                  <h3 className="font-bold text-white text-base">Rayon News — Global News Android Application</h3>
+                  <a
+                    href="https://github.com/rajesh9474/RAYON-NEWS/releases/tag/debug-apk-build-2-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-mono text-amber-400 hover:underline"
+                  >
+                    Download APK Build #2
+                  </a>
+                </div>
+                <p className="text-xs text-slate-300">
+                  Developed an AI-powered global news Android application in Kotlin with real-time news search, country-level filters, and automated CI/CD APK generation via GitHub Actions.
                 </p>
               </div>
             </div>
