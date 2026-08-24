@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Bot, Sparkles, ExternalLink, Globe, Layers, CheckCircle2,
   Users, ArrowUpRight, X, Newspaper, Navigation, Github,
-  MapPin, Rss, Search, Cpu
+  MapPin, Rss, Search, Cpu, Download, Smartphone
 } from 'lucide-react';
 
 // ─── Project Data ────────────────────────────────────────────────────────────
@@ -52,44 +52,46 @@ const PROJECTS = {
   marco: {
     id: 'marco',
     name: 'Marco',
-    subtitle: 'AI-Powered Conversational Travel & Navigation Assistant',
-    category: 'AI Web Application',
+    subtitle: 'AI-Powered Travel & Navigation Android Application',
+    category: 'Android / AI Application',
     categoryColor: 'emerald',
+    isApk: true,
     description:
-      'Marco is an intelligent conversational web assistant that helps users explore destinations, plan travel routes, and get AI-driven recommendations. It combines geolocation data with an AI chat interface to make navigation smarter and more intuitive.',
+      'Marco is an intelligent Android app that helps users explore destinations, plan travel routes, and get AI-driven recommendations. It combines location intelligence with a conversational interface to make navigation smarter and more intuitive — right from your phone.',
     features: [
-      'AI Conversational Interface',
+      'AI Conversational Navigation',
       'Location-Aware Recommendations',
       'Dynamic Route Planning',
-      'Responsive & Mobile-First UI',
+      'Offline-Ready Mobile Experience',
     ],
-    tech: ['React', 'JavaScript', 'AI Integration', 'Tailwind CSS', 'Vercel'],
-    liveUrl: 'https://github.com/rajesh9474/',
-    githubUrl: 'https://github.com/rajesh9474/',
-    liveLabel: 'marco.vercel.app',
+    tech: ['Android', 'Kotlin', 'AI Integration', 'Google Maps API', 'Material Design'],
+    liveUrl: 'https://github.com/rajesh9474/RAJU/releases',
+    githubUrl: 'https://github.com/rajesh9474/RAJU',
+    liveLabel: 'Download APK',
     modalDetail:
-      'Marco is an AI-powered travel and navigation assistant. It uses conversational AI to answer destination queries, suggest optimal routes, and provide smart travel tips — all in a sleek, responsive web interface built for students and developers.',
+      'Marco is an AI-powered Android travel and navigation application. It uses conversational AI to answer destination queries, suggest optimal routes, and provide smart travel tips. The APK is available for direct download from GitHub Releases.',
   },
   rayon: {
     id: 'rayon',
     name: 'Rayon News',
-    subtitle: 'Modern News Discovery & Reading Platform',
-    category: 'News Web Application',
+    subtitle: 'AI-Powered Global News Android Application',
+    category: 'Android / News Application',
     categoryColor: 'amber',
+    isApk: true,
     description:
-      'Rayon News is a modern, responsive news aggregation platform where users can browse, search, and read the latest news articles across categories in a clean and distraction-free interface.',
+      'RAYON is an AI-powered global news Android app designed to help people understand what is happening around the world in just a few minutes every morning. It brings together world news, country-level updates, and category-based browsing in a clean, distraction-free interface.',
     features: [
-      'Category-Based News Browsing',
-      'Real-Time Article Search',
+      'AI-Curated Global News Feed',
+      'Category & Country-Based Browsing',
       'Clean Article Reading View',
-      'Responsive Mobile-First Design',
+      'Real-Time News Search',
     ],
-    tech: ['React', 'News API', 'JavaScript', 'CSS3', 'Vercel'],
-    liveUrl: 'https://github.com/rajesh9474/',
-    githubUrl: 'https://github.com/rajesh9474/',
-    liveLabel: 'rayon-news.vercel.app',
+    tech: ['Android', 'Kotlin', 'News API', 'Material Design', 'GitHub Actions CI/CD'],
+    liveUrl: 'https://github.com/rajesh9474/RAYON-NEWS/releases/tag/debug-apk-build-2-1',
+    githubUrl: 'https://github.com/rajesh9474/RAYON-NEWS',
+    liveLabel: 'Download APK',
     modalDetail:
-      'Rayon News brings together the latest news in a beautifully minimal interface. Users can filter articles by category, search by keywords, and enjoy distraction-free reading. Built with React and a live News API integration for real-time content.',
+      'Rayon News is an AI-powered global news Android application. Users can browse news by category and country, search articles, and enjoy distraction-free reading. The APK is automatically built via GitHub Actions CI/CD and available for download from GitHub Releases (tag: debug-apk-build-2-1).',
   },
 };
 
@@ -342,11 +344,19 @@ function ProjectCard({ project, onDetails, featured = false }) {
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
-              className={`px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r ${c.btn} font-bold text-xs tracking-wider uppercase flex items-center space-x-2 hover:opacity-95 transition-all`}>
-              <span>Live Demo</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+            {project.isApk ? (
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                className={`px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r ${c.btn} font-bold text-xs tracking-wider uppercase flex items-center space-x-2 hover:opacity-95 transition-all`}>
+                <Download className="w-3.5 h-3.5" />
+                <span>Download APK</span>
+              </a>
+            ) : (
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                className={`px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r ${c.btn} font-bold text-xs tracking-wider uppercase flex items-center space-x-2 hover:opacity-95 transition-all`}>
+                <span>Live Demo</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
 
             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
               className={`px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-xs tracking-wider flex items-center space-x-2 transition-all ${c.details}`}>
@@ -360,11 +370,18 @@ function ProjectCard({ project, onDetails, featured = false }) {
               <ArrowUpRight className={`w-3.5 h-3.5 ${c.detailIcon}`} />
             </button>
 
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
-              className={`hidden sm:inline-flex items-center space-x-1.5 text-xs font-mono ${c.globe} transition-colors bg-slate-900/90 px-3 py-2 rounded-lg border border-slate-800`}>
-              <Globe className={`w-3.5 h-3.5 ${c.globeIcon}`} />
-              <span>{project.liveLabel}</span>
-            </a>
+            {project.isApk ? (
+              <div className="hidden sm:inline-flex items-center space-x-1.5 text-xs font-mono text-slate-400 bg-slate-900/90 px-3 py-2 rounded-lg border border-slate-800">
+                <Smartphone className={`w-3.5 h-3.5 ${c.globeIcon}`} />
+                <span>Android App</span>
+              </div>
+            ) : (
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                className={`hidden sm:inline-flex items-center space-x-1.5 text-xs font-mono ${c.globe} transition-colors bg-slate-900/90 px-3 py-2 rounded-lg border border-slate-800`}>
+                <Globe className={`w-3.5 h-3.5 ${c.globeIcon}`} />
+                <span>{project.liveLabel}</span>
+              </a>
+            )}
           </div>
         </div>
 
@@ -435,11 +452,19 @@ function ProjectModal({ projectId, onClose }) {
         </div>
 
         <div className="pt-4 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3">
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-slate-950 font-bold text-xs uppercase flex items-center justify-center space-x-2">
-            <span>Launch Live Application</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
+          {project.isApk ? (
+            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-slate-950 font-bold text-xs uppercase flex items-center justify-center space-x-2">
+              <Download className="w-4 h-4" />
+              <span>Download APK</span>
+            </a>
+          ) : (
+            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-slate-950 font-bold text-xs uppercase flex items-center justify-center space-x-2">
+              <span>Launch Live Application</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          )}
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-xl bg-slate-800 text-slate-200 font-bold text-xs uppercase hover:bg-slate-700 flex items-center justify-center space-x-2">
             <Github className="w-4 h-4" />
