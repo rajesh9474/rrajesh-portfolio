@@ -37,48 +37,47 @@ endobj
 endobj
 
 5 0 obj
-<< /Length 2000 >>
+<< /Length 3500 >>
 stream
 BT
-/F1 10 Tf
-36 750 Td
-14 TL
+/F1 9 Tf
+30 760 Td
+12 TL
 (R RAJESH) '
-(B.E. Artificial Intelligence & Machine Learning Student) '
-(Location: Andaman and Nicobar Islands, India) '
-(Email: rrajeshsk555@gmail.com) '
-(LinkedIn: linkedin.com/in/r-rajesh-05997633a/) '
-(GitHub: github.com/rajesh9474/) '
+(Final Year B.E. Artificial Intelligence & Machine Learning Student) '
+(Location: Tamil Nadu, India) '
+(Phone: +91 8927430848 | Email: rrajeshsk555@gmail.com) '
+(LinkedIn: linkedin.com/in/r-rajesh-05997633a/ | GitHub: github.com/rajesh9474/) '
+(Portfolio: rrajeshdev.vercel.app) '
+() '
+(================================================================================) '
+(CAREER OBJECTIVE) '
+(================================================================================) '
+(A motivated B.E. Artificial Intelligence and Machine Learning student with a strong interest in software) '
+(development, programming, and emerging technologies. Possesses foundational knowledge of Python,) '
+(web development, and machine learning concepts, along with good problem-solving, teamwork, and) '
+(communication skills. Seeking opportunities to apply technical knowledge, gain practical experience, and) '
+(contribute effectively to innovative projects while continuously developing professional skills.) '
 () '
 (================================================================================) '
 (EDUCATION) '
 (================================================================================) '
-(B.E. Artificial Intelligence and Machine Learning \(2023 - 2027\)) '
-(CGPA: 8.01 / 10.0) '
+(B.E. Artificial Intelligence and Machine Learning \(2023 - 2027\) - CGPA: 8.01 / 10.0) '
+(Higher Secondary Certificate, Government Model Senior Secondary School \(2022\)) '
+(Secondary School Certificate, Government Model Senior Secondary School \(2020\)) '
 () '
 (================================================================================) '
 (TECHNICAL SKILLS) '
 (================================================================================) '
 (Frontend: HTML5, CSS3, JavaScript, Bootstrap, React) '
-(Backend: Python) '
-(Tools & AI Platforms: Git & GitHub, VS Code, Replit, Emergent, Bolt, Antigravity, Cursor, Stitch) '
+(Backend: Python \(Basic\)) '
+(Tools & Platforms: Git & GitHub, VS Code, Replit, Emergent, Bolt, Antigravity, Cursor, Stitch) '
 () '
 (================================================================================) '
 (SOFT SKILLS & LANGUAGES) '
 (================================================================================) '
 (Soft Skills: Teamwork, Communication, Adaptability, Time Management, Problem Solving, Active Listening) '
-(Languages: Tamil, English, Hindi) '
-() '
-(================================================================================) '
-(PROJECTS) '
-(================================================================================) '
-(1. BrainNova AI - AI-Powered Note-Taking Application) '
-(   Conversational AI assistant for Summarization, Grammar correction, Content editing.) '
-(   Live URL: https://note-mind-ai-six.vercel.app/) '
-() '
-(2. Inter-College Hackathon Website) '
-(   Responsive frontend interface for inter-college hackathon event portal.) '
-(   Live URL: https://ignite2k26.vercel.app/) '
+(Languages Known: Tamil, English, Hindi) '
 () '
 (================================================================================) '
 (ACHIEVEMENTS & CERTIFICATIONS) '
@@ -86,6 +85,25 @@ BT
 (- Internship Masterclass Certificate - Novitech Academy, Chennai) '
 (- AI Upskilling Certificate: Technical Foundation - Qualcomm Academy) '
 (- Industrial Visit Certificate - Suffix E Solution) '
+() '
+(================================================================================) '
+(PROJECTS) '
+(================================================================================) '
+(1. BrainNova AI - AI-Powered Note-Taking Application) '
+(   Built and deployed an AI-powered note-taking web application with a conversational assistant.) '
+(   Live URL: https://note-mind-ai-six.vercel.app/) '
+() '
+(2. Inter-College Hackathon Website) '
+(   Developed responsive UI components, event pages, and registration portal.) '
+(   Live URL: https://ignite2k26.vercel.app/) '
+() '
+(3. Marco - AI-Powered Travel & Navigation Android App) '
+(   Android app built in Kotlin with conversational AI for travel routes and location discovery.) '
+(   GitHub / APK: https://github.com/rajesh9474/MARCO) '
+() '
+(4. Rayon News - AI-Powered Global News Android App) '
+(   Android app built in Kotlin featuring AI global news feed and GitHub Actions CI/CD builds.) '
+(   APK Download: https://github.com/rajesh9474/RAYON-NEWS/releases/tag/debug-apk-build-2-1) '
 ET
 endstream
 endobj
@@ -104,5 +122,5 @@ trailer
   /Root 1 0 R
 >>
 startxref
-2400
+3900
 %%EOF
